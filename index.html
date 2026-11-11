@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Betül Aydın Kokular | Bilgisayar Mühendisi & Veri Bilimi Uzmanı</title>
+    <!-- FontAwesome Icon kütüphanesi -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
@@ -113,9 +114,229 @@
 
         .section-title i {
             color: var(--primary);
-            
         }
 
         .badge-active {
             background-color: #dbeafe;
-            color: #1e40af
+            color: #1e40af;
+            font-size: 0.75rem;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-left: auto;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 30px;
+            border-left: 2px solid #cbd5e1;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 4px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--primary);
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 4px;
+        }
+
+        .item-title {
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: var(--dark);
+        }
+
+        .item-sub {
+            color: var(--primary-dark);
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        .item-date {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .project-card {
+            background-color: var(--accent-bg);
+            border: 1px solid #bfdbfe;
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .project-name {
+            font-weight: 700;
+            color: var(--dark);
+            font-size: 0.98rem;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .project-name i {
+            color: var(--primary);
+            font-size: 0.85rem;
+        }
+
+        .project-desc {
+            font-size: 0.93rem;
+            color: var(--text-main);
+            margin-bottom: 10px;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .tag {
+            background: white;
+            color: #1e293b;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid #cbd5e1;
+        }
+
+        .tag.highlight {
+            background: #2563eb;
+            color: white;
+            border-color: #2563eb;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-box {
+            background: var(--light-bg);
+            padding: 18px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .skill-box h4 {
+            color: var(--dark);
+            font-size: 1rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .custom-list {
+            list-style: none;
+        }
+
+        .custom-list li {
+            position: relative;
+            padding-left: 22px;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        .custom-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .info-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            flex: 1;
+            min-width: 200px;
+            background: var(--light-bg);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .item-header { flex-direction: column; }
+            .contact-links { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Betül Aydın Kokular</h1>[cite: 1]
+            <div class="subtitle">Bilgisayar Mühendisi | Veri Bilimi & Yapay Zeka Uzmanı</div>[cite: 1]
+            <div class="contact-links">
+                <a href="mailto:aydinbetul@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i> aydinbetul@gmail.com</a>[cite: 1]
+                <a href="tel:05516541606" class="contact-btn"><i class="fas fa-phone"></i> 0551 654 16 06</a>[cite: 1]
+                <a href="https://www.linkedin.com/in/bet%C3%BCl-ayd%C4%B1n-295687b3/" target="_blank" class="contact-btn"><i class="fab fa-linkedin"></i> LinkedIn Profilim</a>
+                <span class="contact-btn"><i class="fas fa-location-dot"></i> Başakşehir / İstanbul</span>[cite: 1]
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Profesyonel Özet -->
+        <section>
+            <h2 class="section-title"><i class="fas fa-user-circle"></i> Hakkımda & Profesyonel Özet</h2>
+            <p>
+                Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği mezunuyum[cite: 1]. Telekomünikasyon sektörünün öncü kuruluşlarından <strong>Nokia</strong> bünyesinde yaklaşık 3 yıl boyunca Yazılım Geliştirme Uzmanı (Software Developer) olarak görev aldım[cite: 2]. Java, Spring MVC, Hibernate, RESTful Web Servisleri, multithreaded mimariler ve ağ yönetim sistemlerinde geniş ölçekli backend tecrübesine sahibim[cite: 2].
+            </p>
+            <br>
+            <p>
+                Yazılım mühendisliği altyapımı <strong>Veri Bilimi ve Yapay Zeka</strong> odaklı yeni yetkinliklerle geliştirerek sektöre güçlü bir dönüş yapıyorum. Halen Europe Coding School bünyesinde 90 saatlik Veri Bilimi ve Yapay Zeka Uzmanlık Eğitimi'ni sürdürmekte; geçmişteki kurumsal yazılım geliştirme disiplinimi veri analitiği ve makine öğrenmesi vizyonuyla birleştirerek analitik çözümler sunmayı hedefliyorum.
+            </p>
+        </section>
+
+        <!-- Devam Eden Eğitim / Veri Bilimi -->
+        <section>
+            <h2 class="section-title">
+                <i class="fas fa-brain"></i> Güncel Gelişim & Yapay Zeka
+                <span class="badge-active">Devam Ediyor</span>
+            </h2>
+            <div class="timeline-item">
+                <div class="item-header">
+                    <div class="item-title">Veri Bilimi ve Yapay Zeka Eğitimi (90 Saat)</div>
+                    <div class="item-date">Devam Ediyor</div>
+                </div>
+                <div class="item-sub">Europe Coding School</div>
+                <p>Python ile veri analitiği, veri görselleştirme, Makine Öğrenmesi (Machine Learning) modelleri ve Yapay Zeka algoritmaları üzerine 90 saat
