@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Betül Aydın Kokular - Yazılım Mühendisi & Veri Bilimi Uzmanı</title>
+    <title>Betül Aydın Kokular | Bilgisayar Mühendisi & Veri Bilimi Uzmanı</title>
+    <!-- FontAwesome Icon Library -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
-            --primary: #2563eb;
-            --primary-dark: #1e40af;
-            --dark: #0f172a;
-            --light-bg: #f8fafc;
+            --primary-color: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary-color: #0f172a;
+            --bg-color: #f8fafc;
             --card-bg: #ffffff;
             --text-main: #334155;
-            --text-muted: #64748b;
-            --border: #e2e8f0;
+            --text-heading: #0f172a;
+            --border-color: #e2e8f0;
+            --accent-blue: #eff6ff;
         }
 
         * {
@@ -25,7 +27,7 @@
         }
 
         body {
-            background-color: var(--light-bg);
+            background-color: var(--bg-color);
             color: var(--text-main);
             line-height: 1.6;
         }
@@ -33,54 +35,56 @@
         header {
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             color: white;
-            padding: 50px 20px;
+            padding: 60px 20px 40px;
             text-align: center;
         }
 
-        .header-container {
+        .header-content {
             max-width: 900px;
             margin: 0 auto;
         }
 
         h1 {
-            font-size: 2.4rem;
+            font-size: 2.6rem;
             font-weight: 700;
             margin-bottom: 8px;
             color: #ffffff;
+            letter-spacing: -0.5px;
         }
 
         .subtitle {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             color: #93c5fd;
-            margin-bottom: 20px;
             font-weight: 500;
+            margin-bottom: 25px;
         }
 
-        .contact-info {
+        .contact-links {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 12px;
-            margin-top: 15px;
         }
 
-        .contact-item {
-            color: #f1f5f9;
-            background: rgba(255, 255, 255, 0.08);
-            padding: 8px 16px;
-            border-radius: 20px;
-            text-decoration: none;
-            font-size: 0.9rem;
+        .contact-btn {
             display: inline-flex;
             align-items: center;
             gap: 8px;
+            background-color: rgba(255, 255, 255, 0.08);
+            color: #f1f5f9;
+            padding: 8px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9rem;
             border: 1px solid rgba(255, 255, 255, 0.15);
-            transition: all 0.2s ease;
+            transition: all 0.2s ease-in-out;
         }
 
-        .contact-item:hover {
-            background: var(--primary);
+        .contact-btn:hover {
+            background-color: var(--primary-color);
             color: white;
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
         }
 
         .container {
@@ -92,101 +96,135 @@
         section {
             background: var(--card-bg);
             border-radius: 12px;
-            padding: 30px;
+            padding: 35px;
             margin-bottom: 30px;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-            border: 1px solid var(--border);
+            border: 1px solid var(--border-color);
         }
 
-        .section-header {
+        .section-title {
+            font-size: 1.4rem;
+            color: var(--text-heading);
+            margin-bottom: 22px;
             display: flex;
             align-items: center;
-            gap: 10px;
-            font-size: 1.4rem;
-            color: var(--dark);
-            border-bottom: 2px solid var(--light-bg);
+            gap: 12px;
+            border-bottom: 2px solid var(--bg-color);
             padding-bottom: 12px;
-            margin-bottom: 20px;
         }
 
-        .section-header i {
-            color: var(--primary);
+        .section-title i {
+            color: var(--primary-color);
         }
 
         .badge-active {
             background-color: #dbeafe;
             color: #1e40af;
             font-size: 0.75rem;
-            padding: 4px 10px;
+            padding: 4px 12px;
             border-radius: 12px;
-            font-weight: 600;
+            font-weight: 700;
+            text-transform: uppercase;
             margin-left: auto;
         }
 
-        .experience-item, .education-item {
-            margin-bottom: 25px;
-            padding-left: 20px;
-            border-left: 3px solid #cbd5e1;
+        .timeline-item {
             position: relative;
+            padding-left: 25px;
+            margin-bottom: 30px;
+            border-left: 2px solid #cbd5e1;
         }
 
-        .experience-item:last-child, .education-item:last-child {
+        .timeline-item:last-child {
             margin-bottom: 0;
         }
 
-        .experience-item::before, .education-item::before {
+        .timeline-item::before {
             content: '';
             position: absolute;
-            left: -8px;
+            left: -7px;
             top: 4px;
-            width: 13px;
-            height: 13px;
+            width: 12px;
+            height: 12px;
             border-radius: 50%;
-            background-color: var(--primary);
+            background-color: var(--primary-color);
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 4px;
         }
 
         .item-title {
             font-weight: 700;
             font-size: 1.15rem;
-            color: var(--dark);
+            color: var(--text-heading);
         }
 
-        .item-company {
+        .item-sub {
             color: var(--primary-dark);
             font-weight: 600;
             font-size: 1rem;
+            margin-bottom: 6px;
         }
 
         .item-date {
             font-size: 0.85rem;
-            color: var(--text-muted);
-            margin-bottom: 12px;
+            color: #64748b;
+            font-weight: 500;
         }
 
-        .project-box {
-            background: #f8fafc;
+        .project-card {
+            background-color: var(--accent-blue);
+            border: 1px solid #bfdbfe;
             border-radius: 8px;
-            padding: 15px;
-            margin-top: 10px;
+            padding: 16px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .project-name {
+            font-weight: 700;
+            color: var(--text-heading);
+            font-size: 1rem;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .project-name i {
+            color: var(--primary-color);
+            font-size: 0.85rem;
+        }
+
+        .project-desc {
+            font-size: 0.95rem;
+            color: var(--text-main);
             margin-bottom: 10px;
-            border: 1px solid #e2e8f0;
         }
 
-        .project-title {
-            font-weight: 600;
-            color: var(--dark);
-            margin-bottom: 5px;
-        }
-
-        .tech-tags {
+        .tech-stack {
             display: flex;
             flex-wrap: wrap;
             gap: 6px;
-            margin-top: 10px;
         }
 
         .tag {
-            background-color: #e2e8f0;
-            color: #334155;
+            background: white;
+            color: #1e293b;
             padding: 3px 10px;
-            border-radius
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid #cbd5e1;
+        }
+
+        .tag.highlight {
+            background: #2563eb;
+            color: white;
+            border-color: #2563eb;
+        }
