@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Betül Aydın Kokular | Bilgisayar Mühendisi & Veri Bilimi Uzmanı</title>
+    <title>Betül Aydın Kokular | Bilgisayar Mühendisi & Yazılım Geliştirme Uzmanı</title>
     <!-- FontAwesome Icon kütüphanesi -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -35,7 +35,7 @@
         header {
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             color: white;
-            padding: 50px 20px;
+            padding: 55px 20px;
             text-align: center;
         }
 
@@ -45,17 +45,17 @@
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.6rem;
             font-weight: 700;
             margin-bottom: 8px;
             color: #ffffff;
         }
 
         .subtitle {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             color: #93c5fd;
             font-weight: 500;
-            margin-bottom: 20px;
+            margin-bottom: 22px;
         }
 
         .contact-links {
@@ -71,7 +71,7 @@
             gap: 8px;
             background-color: rgba(255, 255, 255, 0.08);
             color: #f1f5f9;
-            padding: 8px 16px;
+            padding: 8px 18px;
             border-radius: 20px;
             text-decoration: none;
             font-size: 0.9rem;
@@ -104,7 +104,7 @@
         .section-title {
             font-size: 1.4rem;
             color: var(--dark);
-            margin-bottom: 20px;
+            margin-bottom: 22px;
             display: flex;
             align-items: center;
             gap: 12px;
@@ -159,15 +159,15 @@
 
         .item-title {
             font-weight: 700;
-            font-size: 1.15rem;
+            font-size: 1.2rem;
             color: var(--dark);
         }
 
         .item-sub {
             color: var(--primary-dark);
             font-weight: 600;
-            font-size: 1rem;
-            margin-bottom: 8px;
+            font-size: 1.05rem;
+            margin-bottom: 10px;
         }
 
         .item-date {
@@ -177,19 +177,21 @@
         }
 
         .project-card {
-            background-color: var(--accent-bg);
-            border: 1px solid #bfdbfe;
+            background-color: #fff;
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--primary);
             border-radius: 8px;
-            padding: 16px;
-            margin-top: 15px;
-            margin-bottom: 15px;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
 
         .project-name {
             font-weight: 700;
             color: var(--dark);
-            font-size: 0.98rem;
-            margin-bottom: 6px;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -197,13 +199,35 @@
 
         .project-name i {
             color: var(--primary);
-            font-size: 0.85rem;
         }
 
-        .project-desc {
+        .project-desc-text {
+            font-size: 0.95rem;
+            color: #475569;
+            margin-bottom: 12px;
+        }
+
+        .project-bullet-list {
+            list-style: none;
+            margin-bottom: 15px;
+        }
+
+        .project-bullet-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
             font-size: 0.93rem;
             color: var(--text-main);
-            margin-bottom: 10px;
+        }
+
+        .project-bullet-list li::before {
+            content: "•";
+            position: absolute;
+            left: 5px;
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.2rem;
+            line-height: 1;
         }
 
         .tech-stack {
@@ -213,19 +237,19 @@
         }
 
         .tag {
-            background: white;
-            color: #1e293b;
-            padding: 3px 10px;
-            border-radius: 4px;
+            background: #f1f5f9;
+            color: #334155;
+            padding: 4px 12px;
+            border-radius: 6px;
             font-size: 0.8rem;
             font-weight: 600;
-            border: 1px solid #cbd5e1;
+            border: 1px solid #e2e8f0;
         }
 
         .tag.highlight {
-            background: #2563eb;
-            color: white;
-            border-color: #2563eb;
+            background: #dbeafe;
+            color: #1e40af;
+            border-color: #bfdbfe;
         }
 
         .skills-grid {
@@ -303,7 +327,7 @@
     <header>
         <div class="header-content">
             <h1>Betül Aydın Kokular</h1>[cite: 1]
-            <div class="subtitle">Bilgisayar Mühendisi | Veri Bilimi & Yapay Zeka Uzmanı</div>[cite: 1]
+            <div class="subtitle">Bilgisayar Mühendisi | Yazılım Geliştirme Uzmanı</div>[cite: 1]
             <div class="contact-links">
                 <a href="mailto:aydinbetul@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i> aydinbetul@gmail.com</a>[cite: 1]
                 <a href="tel:05516541606" class="contact-btn"><i class="fas fa-phone"></i> 0551 654 16 06</a>[cite: 1]
@@ -317,20 +341,20 @@
 
         <!-- Profesyonel Özet -->
         <section>
-            <h2 class="section-title"><i class="fas fa-user-circle"></i> Hakkımda & Profesyonel Özet</h2>
+            <h2 class="section-title"><i class="fas fa-user-circle"></i> Profili & Özet</h2>
             <p>
-                Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği mezunuyum[cite: 1]. Telekomünikasyon sektörünün öncü kuruluşlarından <strong>Nokia</strong> bünyesinde yaklaşık 3 yıl boyunca Yazılım Geliştirme Uzmanı (Software Developer) olarak görev aldım[cite: 2]. Java, Spring MVC, Hibernate, RESTful Web Servisleri, multithreaded mimariler ve ağ yönetim sistemlerinde geniş ölçekli backend tecrübesine sahibim[cite: 2].
+                Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği lisans mezunuyum[cite: 1]. Telekomünikasyon sektörünün öncü kuruluşlarından <strong>Nokia</strong> bünyesinde yaklaşık 3 yıl boyunca Yazılım Geliştirme Uzmanı (Software Developer) olarak kurumsal ölçekli projelerde görev aldım[cite: 2]. Java, Spring Framework, Hibernate, RESTful Web Servisleri, multithreaded mimariler, veri birleştirme (data aggregation) ve veritabanı yönetimi alanlarında güçlü bir backend ve sistem altyapısına sahibim[cite: 2].
             </p>
             <br>
             <p>
-                Yazılım mühendisliği altyapımı <strong>Veri Bilimi ve Yapay Zeka</strong> odaklı yeni yetkinliklerle geliştirerek sektöre güçlü bir dönüş yapıyorum. Halen Europe Coding School bünyesinde 90 saatlik Veri Bilimi ve Yapay Zeka Uzmanlık Eğitimi'ni sürdürmekte; geçmişteki kurumsal yazılım geliştirme disiplinimi veri analitiği ve makine öğrenmesi vizyonuyla birleştirerek analitik çözümler sunmayı hedefliyorum.
+                Mühendislik temellerimi yeni nesil teknolojilerle güçlendirmek amacıyla şu an <strong>Europe Coding School</strong> tarafından sağlanan 90 saatlik Veri Bilimi ve Yapay Zeka eğitimini almaktayım. Geçmişteki kurumsal yazılım geliştirme disiplinimi bu eğitim süreciyle birleştirerek veri analitiği ve yazılım dünyasında yeni başarılara imza atmayı hedefliyorum.
             </p>
         </section>
 
-        <!-- Devam Eden Eğitim / Veri Bilimi -->
+        <!-- Güncel Eğitim Süreci -->
         <section>
             <h2 class="section-title">
-                <i class="fas fa-brain"></i> Güncel Gelişim & Yapay Zeka
+                <i class="fas fa-graduation-cap"></i> Güncel Mesleki Eğitim
                 <span class="badge-active">Devam Ediyor</span>
             </h2>
             <div class="timeline-item">
@@ -339,4 +363,25 @@
                     <div class="item-date">Devam Ediyor</div>
                 </div>
                 <div class="item-sub">Europe Coding School</div>
-                <p>Python ile veri analitiği, veri görselleştirme, Makine Öğrenmesi (Machine Learning) modelleri ve Yapay Zeka algoritmaları üzerine 90 saat
+                <p>Veri analitiği, Python ile veri işleme, Makine Öğrenmesi (Machine Learning) temelleri ve Yapay Zeka algoritmaları üzerine teorik ve uygulamalı yetkinlik kazanım programı.</p>
+            </div>
+        </section>
+
+        <!-- Detaylandırılmış Projeler ve İş Deneyimi -->
+        <section>
+            <h2 class="section-title"><i class="fas fa-briefcase"></i> İş Deneyimi ve Gerçekleştirilen Projeler</h2>
+            
+            <div class="timeline-item">
+                <div class="item-header">
+                    <div class="item-title">Nokia Software Developer</div>[cite: 2]
+                    <div class="item-date">Ekim 2016 – Haziran 2019</div>[cite: 2]
+                </div>
+                <div class="item-sub">Nokia / Telekomünikasyon Çözümleri</div>[cite: 2]
+                <p style="margin-bottom: 15px;">Nokia bünyesinde Türkiye'nin lider telekom operatörleri (Turkcell ve Türk Telekom) için hayata geçirilen görev-kritik (mission-critical) projelerin teknik detayları:[cite: 2]</p>
+
+                <!-- Proje 1 -->
+                <div class="project-card">
+                    <div class="project-name"><i class="fas fa-desktop"></i> 1. NOKIA SELFCARE / TURKCELL PRATİK ÇÖZÜM / TÜRK TELEKOM MAC CLIENT</div>[cite: 2]
+                    <div class="project-desc-text">Turkcell ve Türk Telekom müşterilerinin Mac işletim sistemine sahip cihazlarında ağ sorunlarını tespit etmek ve çözmek amacıyla geliştirilen uçtan uca masaüstü ve ağ kontrol ürünü.[cite: 2]</div>
+                    <ul class="project-bullet-list">
+                        <li>Mac cihazları üzerinde yerel ağ bağlantı testlerini otomatikleştiren Native
